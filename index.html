@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISOLIR</title>
+<!-- Link untuk font Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000005;
+        color: rgb(251, 246, 246);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .login {
+        position: relative;
+        text-align: center;
+        background-color: #000000;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgb(255, 255, 255);
+        width: 100%;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .login::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        background: linear-gradient(90deg, #00ffcc, #ffcc00, #ff66ff, #00ffcc);
+        background-size: 300% 300%;
+        animation: borderAnimation 5s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes borderAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .login h1 {
+        font-size: 2.2rem;
+        margin: 25px 0;  /* Menambahkan jarak di sekitar judul */
+        font-weight: 600;
+        color: #ffffff;  /* Mengubah warna teks menjadi putih */
+    }
+
+    .login h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+
+    .login p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 12px 0;
+    }
+
+    .login strong {
+        font-weight: 600;
+    }
+
+    .whatsapp-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 18px;
+        background-color: #25d366;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .whatsapp-btn:hover {
+        background-color: #20ba5c;
+        transform: scale(1.05);
+    }
+
+    /* Media query untuk layar kecil */
+    @media (max-width: 480px) {
+        .login h1 {
+            font-size: 1.8rem;
+        }
+
+        .login h3 {
+            font-size: 1rem;
+        }
+
+        .login p {
+            font-size: 0.9rem;
+        }
+
+        .whatsapp-btn {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="login">
+        <!-- Teks "INTERNET TERISOLIR" dengan warna putih -->
+        <h1>INTERNET TERISOLIR</h1>
+        <h3>Kami informasikan bahwa layanan internet saat ini terisolir.</h3>
+        <p>Dimohon untuk melakukan pembayaran tagihan melalui rekening <strong>Bank Mandiri 1130014862431</strong> atas nama <strong>Yopi Ansah</strong>.</p>
+        <p>Agar layanan internet tetap aktif, dimohon untuk melakukan pembayaran sebelum tanggal <strong>20</strong> setiap bulannya.</p>
+        <p>Silahkan konfirmasi pembayaran ke WhatsApp</p>
+        <a class="whatsapp-btn" href="https://wa.me/6282289467410" target="_blank">Chat WhatsApp</a>
+        <p>Terimakasih</p>
+    </div>
+</div>
+</body>
+</html>
